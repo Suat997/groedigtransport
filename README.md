@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -40,7 +40,7 @@
       font-size: 2.5em;
     }
     .hero p {
-      color: #000000;
+      color: black;
       font-size: 1.5em;
     }
     section {
@@ -95,121 +95,4 @@
     }
 
     /* Mobile Anpassung */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8em;
-      }
-      .hero h2 {
-        font-size: 2em;
-      }
-      .hero p {
-        font-size: 1.2em;
-      }
-      .leistungen ul {
-        padding-left: 15px;
-      }
-      .lang-select {
-        top: 5px;
-        right: 10px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1 id="header-title">Grödig Transport</h1>
-    <p id="header-description">Wir bringen Ihre Ware sicher von A bis Z.</p>
-  </header>
-  <nav>
-    <a href="#ueber-uns" id="nav-about">Über uns</a>
-    <a href="#leistungen" id="nav-services">Leistungen</a>
-    <a href="#geschaeftsfuehrer" id="nav-businessman">Geschäftsführer</a>
-    <a href="#kontakt" id="nav-contact">Kontakt</a>
-  </nav>
-
-  <div class="hero">
-    <h2 id="hero-title">Zuverlässiger Transport für jede Strecke</h2>
-    <p id="hero-subtitle" style="color: black;">Effizient. Sicher. Pünktlich.</p>
-  </div>
-
-  <section id="ueber-uns">
-    <h2 id="about-title">Über uns</h2>
-    <p id="about-description">Grödig Transport ist Ihr vertrauensvoller Partner für Logistiklösungen. Mit unserer Erfahrung und modernen Flotte sorgen wir dafür, dass Ihre Waren sicher und termingerecht ihr Ziel erreichen.</p>
-  </section>
-
-  <section id="leistungen" class="leistungen">
-    <h2 id="services-title">Unsere Leistungen</h2>
-    <ul>
-      <li id="service1">Waren- und Frachttransporte national & international</li>
-      <li id="service2">Express- und Sonderlieferungen</li>
-      <li id="service3">Zuverlässige Lager- und Logistikdienste</li>
-    </ul>
-  </section>
-
-  <!-- Geschäftsführer Abschnitt -->
-  <section id="geschaeftsfuehrer">
-    <h2 id="businessman-title">Geschäftsführer</h2>
-    <img src="geschaeftsfuehrer-foto.jpg" alt="Suat Nurcheski" class="businessman-photo">
-    <p id="businessman-name">Suat Nurcheski</p>
-    <p id="businessman-bio">Suat Nurcheski ist der Geschäftsführer von Grödig Transport. Er ist Student und plant bald zu heiraten. Mit seiner Vision und Erfahrung sorgt er dafür, dass das Unternehmen erfolgreich wächst und immer höchste Qualität im Transportservice bietet.</p>
-  </section>
-
-  <section id="kontakt">
-    <h2 id="contact-title">Kontakt</h2>
-    <p id="contact-address">Adresse: Musterstraße 1, 5082 Grödig</p>
-    <p id="contact-phone">Telefon: +43 123 456789</p>
-    <p id="contact-email">Email: kontakt@groedig-transport.at</p>
-  </section>
-
-  <footer>
-    &copy; 2024 Grödig Transport. Alle Rechte vorbehalten.
-  </footer>
-
-  <!-- Sprachauswahl -->
-  <div class="lang-select">
-    <button onclick="changeLanguage('de')">Deutsch</button>
-    <button onclick="changeLanguage('it')">Italiano</button>
-    <button onclick="changeLanguage('mk')">Македонски</button>
-  </div>
-
-  <script>
-    function changeLanguage(language) {
-      const texts = {
-        de: {
-          "header-title": "Grödig Transport",
-          "header-description": "Wir bringen Ihre Ware sicher von A bis Z.",
-          "nav-about": "Über uns",
-          "nav-services": "Leistungen",
-          "nav-businessman": "Geschäftsführer",
-          "nav-contact": "Kontakt",
-          "hero-title": "Zuverlässiger Transport für jede Strecke",
-          "hero-subtitle": "Effizient. Sicher. Pünktlich.",
-          "about-title": "Über uns",
-          "about-description": "Grödig Transport ist Ihr vertrauensvoller Partner für Logistiklösungen. Mit unserer Erfahrung und modernen Flotte sorgen wir dafür, dass Ihre Waren sicher und termingerecht ihr Ziel erreichen.",
-          "services-title": "Unsere Leistungen",
-          "service1": "Waren- und Frachttransporte national & international",
-          "service2": "Express- und Sonderlieferungen",
-          "service3": "Zuverlässige Lager- und Logistikdienste",
-          "businessman-title": "Geschäftsführer",
-          "businessman-name": "Suat Nurcheski",
-          "businessman-bio": "Suat Nurcheski ist der Geschäftsführer von Grödig Transport. Er ist Student und plant bald zu heiraten. Mit seiner Vision und Erfahrung sorgt er dafür, dass das Unternehmen erfolgreich wächst und immer höchste Qualität im Transportservice bietet.",
-          "contact-title": "Kontakt",
-          "contact-address": "Adresse: Musterstraße 1, 5082 Grödig",
-          "contact-phone": "Telefon: +43 123 456789",
-          "contact-email": "Email: kontakt@groedig-transport.at"
-        },
-        it: {
-          "header-title": "Grödig Transport",
-          "header-description": "Trasportiamo le tue merci in sicurezza da A a Z.",
-          "nav-about": "Chi siamo",
-          "nav-services": "Servizi",
-          "nav-businessman": "Direttore",
-          "nav-contact": "Contatti",
-          "hero-title": "Trasporto affidabile per ogni percorso",
-          "hero-subtitle": "Efficiente. Sicuro. Puntuale.",
-          "about-title": "Chi siamo",
-          "about-description": "Grödig Transport è il tuo partner fidato per soluzioni logistiche. Con la nostra esperienza e la nostra flotta moderna, garantiamo che le tue merci arrivino in sicurezza e puntualmente a destinazione.",
-          "services-title": "I nostri Servizi",
-          "service1": "Trasporti di merci a livello nazionale e internazionale",
-          "service2": "Consegne espresse e speciali",
-          "service3": "Servizi affidabili di magazzinaggio e
+    @media (max-width:
