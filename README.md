@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -36,7 +36,7 @@
       text-align: center;
     }
     .highlight-text {
-      color: black;  /* Farbe für den Text ändern */
+      color: black;
     }
     section {
       padding: 40px 20px;
@@ -62,6 +62,41 @@
       text-align: center;
       padding: 20px;
     }
+
+    /* Neuer Abschnitt für Geschäftsführer */
+    #geschaeftsfuehrer {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #geschaeftsfuehrer h2 {
+      color: #003366;
+    }
+
+    .geschaeftsfuehrer-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .geschaeftsfuehrer-foto {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .geschaeftsfuehrer-details h3 {
+      color: #003366;
+    }
+
+    .geschaeftsfuehrer-details p {
+      font-size: 16px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
@@ -73,16 +108,31 @@
     <a href="#ueber-uns">Über uns</a>
     <a href="#leistungen">Leistungen</a>
     <a href="#kontakt">Kontakt</a>
+    <a href="#geschaeftsfuehrer">Unser Geschäftsführer</a>
   </nav>
 
   <div class="hero">
     <h2>Zuverlässiger Transport für jede Strecke</h2>
-    <p class="highlight-text">Effizient. Sicher. Pünktlich.</p>  <!-- Textfarbe auf Schwarz gesetzt -->
+    <p class="highlight-text">Effizient. Sicher. Pünktlich.</p>
   </div>
 
   <section id="ueber-uns">
     <h2>Über uns</h2>
     <p>Grödig Transport ist Ihr vertrauensvoller Partner für Logistiklösungen. Mit unserer Erfahrung und modernen Flotte sorgen wir dafür, dass Ihre Waren sicher und termingerecht ihr Ziel erreichen.</p>
+  </section>
+
+  <!-- Neuer Abschnitt für den Geschäftsführer -->
+  <section id="geschaeftsfuehrer">
+    <h2>Unser Geschäftsführer</h2>
+    <div class="geschaeftsfuehrer-info">
+      <img src="https://via.placeholder.com/150" alt="Foto Geschäftsführer" class="geschaeftsfuehrer-foto">
+      <div class="geschaeftsfuehrer-details">
+        <h3>Suat Nurcheski</h3>
+        <p><strong>Geschäftsführer</strong></p>
+        <p>Suat Nurcheski ist der Geschäftsführer von Grödig Transport. Er ist nicht nur ein erfolgreicher Unternehmer, sondern auch ein engagierter Student, der derzeit sein Studium mit Fokus auf Logistik und Wirtschaft fortsetzt. Trotz seines jungen Alters führt er unser Unternehmen mit viel Leidenschaft und Erfahrung.</p>
+        <p>Außerdem freut sich Suat darauf, bald zu heiraten, und dieser nächste Schritt in seinem Leben inspiriert ihn, sowohl beruflich als auch privat weiterhin Verantwortung zu übernehmen und die Herausforderungen des Lebens anzunehmen.</p>
+      </div>
+    </div>
   </section>
 
   <section id="leistungen" class="leistungen">
@@ -102,7 +152,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Grödig Transport. Alle Rechte vorbehalten.
+    &copy; 2024 Grödig Transport. Alle Rechte vorbehalten.
   </footer>
 </body>
 </html>
