@@ -23,11 +23,14 @@
       justify-content: center;
       gap: 20px;
       padding: 10px;
+      flex-wrap: wrap;
     }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      padding: 10px 20px;
+      display: block;
     }
     .hero {
       background: url('https://source.unsplash.com/1600x600/?truck,transport') no-repeat center center/cover;
@@ -97,6 +100,47 @@
       font-size: 16px;
       color: #333;
     }
+
+    /* Mobile-responsive Layout */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .geschaeftsfuehrer-info {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .geschaeftsfuehrer-foto {
+        width: 120px;
+        height: 120px;
+      }
+
+      section {
+        padding: 20px 10px;
+      }
+
+      footer {
+        padding: 10px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 50px 20px;
+      }
+
+      nav a {
+        font-size: 14px;
+        padding: 8px 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -152,7 +196,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Grödig Transport. Alle Rechte vorbehalten.
+    &copy; 2024 Grödig Transport. Alle Rechte vorbehalten.
   </footer>
 </body>
 </html>
