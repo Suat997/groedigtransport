@@ -59,9 +59,31 @@
       text-align: center;
       padding: 20px;
     }
+
+    /* Sprachauswahl oben rechts */
     .lang-select {
-      text-align: right;
-      margin: 10px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .lang-select button {
+      padding: 8px 16px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .lang-select button:hover {
+      background-color: #003366;
+    }
+
+    .businessman-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -73,6 +95,7 @@
   <nav>
     <a href="#ueber-uns" id="nav-about">Über uns</a>
     <a href="#leistungen" id="nav-services">Leistungen</a>
+    <a href="#geschaeftsfuehrer" id="nav-businessman">Geschäftsführer</a>
     <a href="#kontakt" id="nav-contact">Kontakt</a>
   </nav>
 
@@ -95,6 +118,14 @@
     </ul>
   </section>
 
+  <!-- Geschäftsführer Abschnitt -->
+  <section id="geschaeftsfuehrer">
+    <h2 id="businessman-title">Geschäftsführer</h2>
+    <img src="geschaeftsfuehrer-foto.jpg" alt="Suat Nurcheski" class="businessman-photo">
+    <p id="businessman-name">Suat Nurcheski</p>
+    <p id="businessman-bio">Suat Nurcheski ist der Geschäftsführer von Grödig Transport. Er ist Student und plant bald zu heiraten. Mit seiner Vision und Erfahrung sorgt er dafür, dass das Unternehmen erfolgreich wächst und immer höchste Qualität im Transportservice bietet.</p>
+  </section>
+
   <section id="kontakt">
     <h2 id="contact-title">Kontakt</h2>
     <p id="contact-address">Adresse: Musterstraße 1, 5082 Grödig</p>
@@ -103,63 +134,4 @@
   </section>
 
   <footer>
-    &copy; 2025 Grödig Transport. Alle Rechte vorbehalten.
-  </footer>
-
-  <div class="lang-select">
-    <button onclick="changeLanguage('de')">Deutsch</button>
-    <button onclick="changeLanguage('it')">Italiano</button>
-  </div>
-
-  <script>
-    function changeLanguage(language) {
-      const texts = {
-        de: {
-          "header-title": "Grödig Transport",
-          "header-description": "Wir bringen Ihre Ware sicher von A bis Z.",
-          "nav-about": "Über uns",
-          "nav-services": "Leistungen",
-          "nav-contact": "Kontakt",
-          "hero-title": "Zuverlässiger Transport für jede Strecke",
-          "hero-subtitle": "Effizient. Sicher. Pünktlich.",
-          "about-title": "Über uns",
-          "about-description": "Grödig Transport ist Ihr vertrauensvoller Partner für Logistiklösungen. Mit unserer Erfahrung und modernen Flotte sorgen wir dafür, dass Ihre Waren sicher und termingerecht ihr Ziel erreichen.",
-          "services-title": "Unsere Leistungen",
-          "service1": "Waren- und Frachttransporte national & international",
-          "service2": "Express- und Sonderlieferungen",
-          "service3": "Zuverlässige Lager- und Logistikdienste",
-          "contact-title": "Kontakt",
-          "contact-address": "Adresse: Buchbichl 2, 5082 Grödig",
-          "contact-phone": "Telefon: +43 123 456789",
-          "contact-email": "Email: kontakt@groedig-transport.at"
-        },
-        it: {
-          "header-title": "Grödig Transport",
-          "header-description": "Trasportiamo le tue merci in sicurezza da A a Z.",
-          "nav-about": "Chi siamo",
-          "nav-services": "Servizi",
-          "nav-contact": "Contatti",
-          "hero-title": "Trasporto affidabile per ogni percorso",
-          "hero-subtitle": "Efficiente. Sicuro. Puntuale.",
-          "about-title": "Chi siamo",
-          "about-description": "Grödig Transport è il tuo partner fidato per soluzioni logistiche. Con la nostra esperienza e la nostra flotta moderna, garantiamo che le tue merci arrivino in sicurezza e puntualmente a destinazione.",
-          "services-title": "I nostri Servizi",
-          "service1": "Trasporti di merci a livello nazionale e internazionale",
-          "service2": "Consegne espresse e speciali",
-          "service3": "Servizi affidabili di magazzinaggio e logistica",
-          "contact-title": "Contatti",
-          "contact-address": "Indirizzo: Buchbichl 2, 5082 Grödig",
-          "contact-phone": "Telefono: +43 123 456789",
-          "contact-email": "Email: contatti@groedig-transport.it"
-        }
-      };
-
-      const currentTexts = texts[language];
-      
-      Object.keys(currentTexts).forEach(key => {
-        document.getElementById(key).textContent = currentTexts[key];
-      });
-    }
-  </script>
-</body>
-</html>
+    &copy; 2025 Grödig Transport
