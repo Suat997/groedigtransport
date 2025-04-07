@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -23,23 +23,17 @@
       justify-content: center;
       gap: 20px;
       padding: 10px;
-      flex-wrap: wrap;
     }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      padding: 10px 20px;
-      display: block;
     }
     .hero {
       background: url('https://source.unsplash.com/1600x600/?truck,transport') no-repeat center center/cover;
       color: white;
       padding: 100px 20px;
       text-align: center;
-    }
-    .highlight-text {
-      color: black;
     }
     section {
       padding: 40px 20px;
@@ -65,138 +59,107 @@
       text-align: center;
       padding: 20px;
     }
-
-    /* Neuer Abschnitt für Geschäftsführer */
-    #geschaeftsfuehrer {
-      background-color: #f9f9f9;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    #geschaeftsfuehrer h2 {
-      color: #003366;
-    }
-
-    .geschaeftsfuehrer-info {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .geschaeftsfuehrer-foto {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    .geschaeftsfuehrer-details h3 {
-      color: #003366;
-    }
-
-    .geschaeftsfuehrer-details p {
-      font-size: 16px;
-      color: #333;
-    }
-
-    /* Mobile-responsive Layout */
-    @media (max-width: 768px) {
-      .hero {
-        padding: 60px 20px;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .geschaeftsfuehrer-info {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .geschaeftsfuehrer-foto {
-        width: 120px;
-        height: 120px;
-      }
-
-      section {
-        padding: 20px 10px;
-      }
-
-      footer {
-        padding: 10px 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero {
-        padding: 50px 20px;
-      }
-
-      nav a {
-        font-size: 14px;
-        padding: 8px 15px;
-      }
+    .lang-select {
+      text-align: right;
+      margin: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Grödig Transport</h1>
-    <p>Wir bringen Ihre Ware sicher von A bis Z.</p>
+    <h1 id="header-title">Grödig Transport</h1>
+    <p id="header-description">Wir bringen Ihre Ware sicher von A bis Z.</p>
   </header>
   <nav>
-    <a href="#ueber-uns">Über uns</a>
-    <a href="#leistungen">Leistungen</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="#geschaeftsfuehrer">Unser Geschäftsführer</a>
+    <a href="#ueber-uns" id="nav-about">Über uns</a>
+    <a href="#leistungen" id="nav-services">Leistungen</a>
+    <a href="#kontakt" id="nav-contact">Kontakt</a>
   </nav>
 
   <div class="hero">
-    <h2>Zuverlässiger Transport für jede Strecke</h2>
-    <p class="highlight-text">Effizient. Sicher. Pünktlich.</p>
+    <h2 id="hero-title">Zuverlässiger Transport für jede Strecke</h2>
+    <p id="hero-subtitle">Effizient. Sicher. Pünktlich.</p>
   </div>
 
   <section id="ueber-uns">
-    <h2>Über uns</h2>
-    <p>Grödig Transport ist Ihr vertrauensvoller Partner für Logistiklösungen. Mit unserer Erfahrung und modernen Flotte sorgen wir dafür, dass Ihre Waren sicher und termingerecht ihr Ziel erreichen.</p>
-  </section>
-
-  <!-- Neuer Abschnitt für den Geschäftsführer -->
-  <section id="geschaeftsfuehrer">
-    <h2>Unser Geschäftsführer</h2>
-    <div class="geschaeftsfuehrer-info">
-      <img src="https://via.placeholder.com/150" alt="Foto Geschäftsführer" class="geschaeftsfuehrer-foto">
-      <div class="geschaeftsfuehrer-details">
-        <h3>Suat Nurcheski</h3>
-        <p><strong>Geschäftsführer</strong></p>
-        <p>Suat Nurcheski ist der Geschäftsführer von Grödig Transport. Er ist nicht nur ein erfolgreicher Unternehmer, sondern auch ein engagierter Student, der derzeit sein Studium mit Fokus auf Logistik und Wirtschaft fortsetzt. Trotz seines jungen Alters führt er unser Unternehmen mit viel Leidenschaft und Erfahrung.</p>
-        <p>Außerdem freut sich Suat darauf, bald zu heiraten, und dieser nächste Schritt in seinem Leben inspiriert ihn, sowohl beruflich als auch privat weiterhin Verantwortung zu übernehmen und die Herausforderungen des Lebens anzunehmen.</p>
-      </div>
-    </div>
+    <h2 id="about-title">Über uns</h2>
+    <p id="about-description">Grödig Transport ist Ihr vertrauensvoller Partner für Logistiklösungen. Mit unserer Erfahrung und modernen Flotte sorgen wir dafür, dass Ihre Waren sicher und termingerecht ihr Ziel erreichen.</p>
   </section>
 
   <section id="leistungen" class="leistungen">
-    <h2>Unsere Leistungen</h2>
+    <h2 id="services-title">Unsere Leistungen</h2>
     <ul>
-      <li>Waren- und Frachttransporte national & international</li>
-      <li>Express- und Sonderlieferungen</li>
-      <li>Zuverlässige Lager- und Logistikdienste</li>
+      <li id="service1">Waren- und Frachttransporte national & international</li>
+      <li id="service2">Express- und Sonderlieferungen</li>
+      <li id="service3">Zuverlässige Lager- und Logistikdienste</li>
     </ul>
   </section>
 
   <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Adresse: Musterstraße 1, 5082 Grödig</p>
-    <p>Telefon: +43 123 456789</p>
-    <p>Email: kontakt@groedig-transport.at</p>
+    <h2 id="contact-title">Kontakt</h2>
+    <p id="contact-address">Adresse: Musterstraße 1, 5082 Grödig</p>
+    <p id="contact-phone">Telefon: +43 123 456789</p>
+    <p id="contact-email">Email: kontakt@groedig-transport.at</p>
   </section>
 
   <footer>
-    &copy; 2025 Grödig Transport. Alle Rechte vorbehalten.
+    &copy; 2024 Grödig Transport. Alle Rechte vorbehalten.
   </footer>
+
+  <div class="lang-select">
+    <button onclick="changeLanguage('de')">Deutsch</button>
+    <button onclick="changeLanguage('it')">Italiano</button>
+  </div>
+
+  <script>
+    function changeLanguage(language) {
+      const texts = {
+        de: {
+          "header-title": "Grödig Transport",
+          "header-description": "Wir bringen Ihre Ware sicher von A bis Z.",
+          "nav-about": "Über uns",
+          "nav-services": "Leistungen",
+          "nav-contact": "Kontakt",
+          "hero-title": "Zuverlässiger Transport für jede Strecke",
+          "hero-subtitle": "Effizient. Sicher. Pünktlich.",
+          "about-title": "Über uns",
+          "about-description": "Grödig Transport ist Ihr vertrauensvoller Partner für Logistiklösungen. Mit unserer Erfahrung und modernen Flotte sorgen wir dafür, dass Ihre Waren sicher und termingerecht ihr Ziel erreichen.",
+          "services-title": "Unsere Leistungen",
+          "service1": "Waren- und Frachttransporte national & international",
+          "service2": "Express- und Sonderlieferungen",
+          "service3": "Zuverlässige Lager- und Logistikdienste",
+          "contact-title": "Kontakt",
+          "contact-address": "Adresse: Buchbichl 2, 5082 Grödig",
+          "contact-phone": "Telefon: +43 123 456789",
+          "contact-email": "Email: kontakt@groedig-transport.at"
+        },
+        it: {
+          "header-title": "Grödig Transport",
+          "header-description": "Trasportiamo le tue merci in sicurezza da A a Z.",
+          "nav-about": "Chi siamo",
+          "nav-services": "Servizi",
+          "nav-contact": "Contatti",
+          "hero-title": "Trasporto affidabile per ogni percorso",
+          "hero-subtitle": "Efficiente. Sicuro. Puntuale.",
+          "about-title": "Chi siamo",
+          "about-description": "Grödig Transport è il tuo partner fidato per soluzioni logistiche. Con la nostra esperienza e la nostra flotta moderna, garantiamo che le tue merci arrivino in sicurezza e puntualmente a destinazione.",
+          "services-title": "I nostri Servizi",
+          "service1": "Trasporti di merci a livello nazionale e internazionale",
+          "service2": "Consegne espresse e speciali",
+          "service3": "Servizi affidabili di magazzinaggio e logistica",
+          "contact-title": "Contatti",
+          "contact-address": "Indirizzo: Buchbichl 2, 5082 Grödig",
+          "contact-phone": "Telefono: +43 123 456789",
+          "contact-email": "Email: contatti@groedig-transport.it"
+        }
+      };
+
+      const currentTexts = texts[language];
+      
+      Object.keys(currentTexts).forEach(key => {
+        document.getElementById(key).textContent = currentTexts[key];
+      });
+    }
+  </script>
 </body>
 </html>
