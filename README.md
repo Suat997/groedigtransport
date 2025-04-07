@@ -35,6 +35,9 @@
       padding: 100px 20px;
       text-align: center;
     }
+    .highlight-text {
+      color: black;  /* Farbe für den Text ändern */
+    }
     section {
       padding: 40px 20px;
       max-width: 1000px;
@@ -74,7 +77,7 @@
 
   <div class="hero">
     <h2>Zuverlässiger Transport für jede Strecke</h2>
-    <p>Effizient. Sicher. Pünktlich.</p>
+    <p class="highlight-text">Effizient. Sicher. Pünktlich.</p>  <!-- Textfarbe auf Schwarz gesetzt -->
   </div>
 
   <section id="ueber-uns">
