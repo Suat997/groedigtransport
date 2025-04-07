@@ -102,7 +102,7 @@
   </section>
 
   <footer>
-    &copy; 2024 Grödig Transport. Alle Rechte vorbehalten.
+    &copy; 2025 Grödig Transport. Alle Rechte vorbehalten.
   </footer>
 </body>
 </html>
