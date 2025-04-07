@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -21,13 +21,16 @@
       background-color: #004080;
       display: flex;
       justify-content: center;
-      gap: 20px;
       padding: 10px;
     }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      padding: 10px 20px;
+    }
+    nav a:hover {
+      background-color: #003366;
     }
     .hero {
       background: url('https://source.unsplash.com/1600x600/?truck,transport') no-repeat center center/cover;
@@ -94,6 +97,31 @@
       margin-top: 20px;
     }
 
+    /* Dropdown-Menü für Navigation */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #004080;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #003366;
+    }
+
     /* Mobile Anpassung */
     @media (max-width: 768px) {
       header h1 {
@@ -120,10 +148,24 @@
     <h1 id="header-title">Grödig Transport</h1>
     <p id="header-description">Wir bringen Ihre Ware sicher von A bis Z.</p>
   </header>
+
+  <!-- Navigation mit Dropdown-Menü -->
   <nav>
-    <a href="#ueber-uns" id="nav-about">Über uns</a>
-    <a href="#leistungen" id="nav-services">Leistungen</a>
-    <a href="#geschaeftsfuehrer" id="nav-businessman">Geschäftsführer</a>
+    <div class="dropdown">
+      <a href="#">Über uns</a>
+      <div class="dropdown-content">
+        <a href="#ueber-uns" id="nav-about">Über uns</a>
+        <a href="#geschaeftsfuehrer" id="nav-businessman">Geschäftsführer</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Leistungen</a>
+      <div class="dropdown-content">
+        <a href="#leistungen" id="nav-services">Leistungen</a>
+      </div>
+    </div>
+
     <a href="#kontakt" id="nav-contact">Kontakt</a>
   </nav>
 
